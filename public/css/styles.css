@@ -1,0 +1,32 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+@media (max-width: 366px){
+.productos{
+    height: 30vh;
+    width: 100%;
+}
+}
+
+.negrita{
+    font-weight: bold;
+}
+
+article{
+    border: 2px solid black;
+    display: block;
+}
+
+li{
+    margin-left: 20px;
+}
+
+.footer{
+    margin: 10px 0px;
+}
+
+article{
+    margin: 10px 0px;
+}
