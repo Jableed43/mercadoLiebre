@@ -3,25 +3,36 @@
     margin: 0;
 }
 
-@media (max-width: 366px){
+@media (min-width: 320px){
 .productos{
     height: 30vh;
     width: 100%;
 }
+
+.banner{
+        margin-top: 10px;
+        width: 100vw;
+    }
+
+img.productos{
+    width: 90vw;
+    margin-left: 20px;
+}
+
+li{
+    margin-left: 60px;
+    font-size: 20px;
+}
+}
+
+#logo{
+    width: 100%;
 }
 
 .negrita{
     font-weight: bold;
 }
 
-article{
-    border: 2px solid black;
-    display: block;
-}
-
-li{
-    margin-left: 20px;
-}
 
 .footer{
     margin: 10px 0px;
@@ -29,4 +40,12 @@ li{
 
 article{
     margin: 10px 0px;
+}
+
+#banner{
+    width: 100vw;
+    }
+
+.banner{
+    width: 100vw;
 }
