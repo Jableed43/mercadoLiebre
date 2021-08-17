@@ -1,51 +1,155 @@
+/* General */
+
 *{
     padding: 0;
     margin: 0;
-}
-
-@media (min-width: 320px){
-.productos{
-    height: 30vh;
-    width: 100%;
-}
-
-.banner{
-        margin-top: 10px;
-        width: 100vw;
-    }
-
-img.productos{
-    width: 90vw;
-    margin-left: 20px;
-}
-
-li{
-    margin-left: 60px;
-    font-size: 20px;
-}
-}
-
-#logo{
-    width: 100%;
+    font-family: var(--tipografia)
 }
 
 .negrita{
     font-weight: bold;
 }
 
+:root{
+    --color-amarillo:#EAC926;
+    --color-azul:#03264C;
+    --color-celeste:#1259c3;
+    --gris-oscuro:#666;
+    --gris-claro:#ebebeb;
+    --verde:#39b54a;
+    --tipografia: 'Roboto', sans-serif;
+    --cuerpo: 12px;
+    --titulares: 24px;
+    --precios: 18px;
+    --descuentos-descripciones: 16px;
+}
 
-.footer{
-    margin: 10px 0px;
+/* Header */
+
+header{
+    background-color: var(--color-amarillo);
+}
+
+.logo{
+    margin-top: 30px;
+    margin-left: 29px;
+    width: 47%;
+}
+
+#busqueda{
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+#lupa{
+background-color: white;
+display: inline-block;
+border: 1px solid black;
+border-radius: 5px;
+margin-left: 20px;
+margin-top: 1px;
+}
+
+i.fas.fa-search{
+padding: 2px;
+}
+
+.cuotas{
+    margin-left: 60px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+
+li{
+    list-style: none;
+}
+
+.burger-menu{
+background-color: var(--color-celeste);
+display: inline-block;
+border-radius: 5px;
+margin: 20px 45vw;
+}
+
+i.fas.fa-bars{
+    color: white;
+    font-size: 20px;
+    padding: 8px;
+}
+
+/* Main */
+
+.banner{
+    width: 100vw;
 }
 
 article{
     margin: 10px 0px;
 }
 
-#banner{
-    width: 100vw;
-    }
-
-.banner{
-    width: 100vw;
+.titulares{
+    font-weight: bold;
+    font-size: var(--titulares);
 }
+
+img.productos{
+    width: 90vw;
+    margin-left: 20px;
+}
+
+.precio{
+font-size: var(--precios);
+}
+
+.descuentos-descripciones{
+    font-size: var(--descuentos-descripciones);
+}
+
+/* Footer */ 
+
+.cuerpo-texto{
+    font-size: var(--cuerpo);
+}
+
+footer i{
+    text-align: center;
+    width: 100%;
+}
+
+i.fas.fa-credit-card , i.fas.fa-gift , i.fas.fa-user-shield {
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: var(--color-celeste);
+}
+
+footer section{
+    margin: 50px 45px;
+}
+
+footer section p{
+    text-align: center;
+    margin:1px 20px;
+}
+
+
+/* Media Queries */
+
+@media (min-width: 320px){
+    .productos{
+        height: 30vh;
+        width: 100%;
+    }
+    
+    .banner{
+            width: 100vw;
+        }
+    
+    li, .cuotas {
+        font-size: var(--cuerpo);
+        font-weight: bold;
+    }
+    }
