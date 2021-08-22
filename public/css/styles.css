@@ -24,6 +24,11 @@
     --descuentos-descripciones: 16px;
 }
 
+/* Body */
+body{
+    background-color: #ebebeb;
+}
+
 /* Header */
 
 header{
@@ -41,21 +46,21 @@ header{
     margin-left: 20px;
 }
 
-#lupa{
-background-color: white;
-display: inline-block;
-border: 1px solid black;
-border-radius: 5px;
-margin-left: 20px;
-margin-top: 1px;
+#lupa {
+    background-color: white;
+    display: inline-block;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-top: 1px;
+    margin-bottom: 10px;
 }
 
 i.fas.fa-search{
 padding: 2px;
 }
 
-.cuotas{
-    margin-left: 60px;
+.cuotas, p.titulares{
+text-align: center;
 }
 
 a{
@@ -83,12 +88,25 @@ i.fas.fa-bars{
 
 /* Main */
 
+main{
+    margin: auto;
+    width: 90vw;
+    background-color: #ebebeb;
+}
+
 .banner{
-    width: 100vw;
+    object-fit: cover;
 }
 
 article{
-    margin: 10px 0px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#precio-descripcion{
+    padding: 15px;
+    background-color: white;
+    border: 1px solid #ebebeb;
 }
 
 .titulares{
@@ -96,17 +114,41 @@ article{
     font-size: var(--titulares);
 }
 
-img.productos{
-    width: 90vw;
-    margin-left: 20px;
+.inner-circle{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border-style: solid;
+    border-width: 2px;
+    line-height: 50px;
+    border-color: var(--verde);
+    padding: 10px 10px;
+    background-color: rgba(0, 0, 0, 0);
+  }
+
+/*
+  img.productos{
+
+}
+*/
+
+i.fas.fa-truck{
+    color: var(--verde);
 }
 
 .precio{
 font-size: var(--precios);
+font-weight: bold;
+}
+
+p.descuentos-descripciones{
+    color: var(--verde);
 }
 
 .descuentos-descripciones{
     font-size: var(--descuentos-descripciones);
+    font-weight: bold;
+
 }
 
 /* Footer */ 
@@ -138,18 +180,85 @@ footer section p{
 
 /* Media Queries */
 
+/* 320px - Mobile Small */
+
 @media (min-width: 320px){
+
+    div#input{
+        display: inline;
+    }
+
+    .nav-menu{
+        display: none;
+    }
+
+    .nav-header{
+        display: none;
+    }
+
+    h3.descuentos-descripciones{
+        display: none;
+    }
+
     .productos{
-        height: 30vh;
         width: 100%;
     }
     
     .banner{
-            width: 100vw;
+    display: none;
         }
     
     li, .cuotas {
         font-size: var(--cuerpo);
         font-weight: bold;
     }
+    }
+
+    /* 361px - Tablet */
+
+    @media (min-width: 361px){
+
+        .burger-menu{
+            display: none;
+        }
+
+        h3.descuentos-descripciones{
+            display: block;
+        }
+
+
+        .banner{
+            display: block;
+            width: 100vw;
+                }
+
+        article{
+            box-shadow: 0px 0px 10px 0px rgba(100,100,100,1);
+        }
+
+        .nav-menu{
+            display: block;
+        }
+    
+        .nav-header{
+            display: block;
+            padding-bottom: 10px;
+        }
+    
+    }
+     
+    @media (min-width: 769px){
+
+        .nav-menu{
+            display: block;
+        }
+    
+        .nav-header{
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        .burger-menu{
+            display: none;
+        }
     }
