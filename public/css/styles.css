@@ -177,6 +177,10 @@ footer section p{
     margin:1px 20px;
 }
 
+p#end.negrita{
+    text-align: center;
+}
+
 
 /* Media Queries */
 
