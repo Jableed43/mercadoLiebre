@@ -101,11 +101,11 @@ main{
 article{
     margin-top: 10px;
     margin-bottom: 10px;
+    background-color: white;
 }
 
 #precio-descripcion{
     padding: 15px;
-    background-color: white;
     border: 1px solid #ebebeb;
 }
 
@@ -153,6 +153,12 @@ p.descuentos-descripciones{
 
 /* Footer */ 
 
+footer {
+    background-color: white;
+    padding: 1px 0px;
+    margin: 0 15px;
+}
+
 .cuerpo-texto{
     font-size: var(--cuerpo);
 }
@@ -178,7 +184,8 @@ footer section p{
 }
 
 p#end.negrita{
-    text-align: center;
+    text-align: start;
+    margin: 50px -20px;
 }
 
 
