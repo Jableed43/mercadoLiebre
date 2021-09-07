@@ -52,7 +52,7 @@ header{
     flex-wrap: wrap;
 }
 
-div#logo{
+div.logo-container{
     width: 50%;
 }
 
@@ -62,7 +62,7 @@ div#logo{
     width: 90%;
 }
 
-div#input{
+div.input{
 width: 50%;
 }
 
@@ -81,7 +81,7 @@ i.fas.fa-search{
     border-radius: 5px;
 }
 
-div#cuotas{
+div.cuotas-container{
     width: 100%;
 }
 
@@ -173,7 +173,7 @@ article{
     width: 100%;
 }
 
-#precio-descripcion{
+.precio-descripcion{
     position: relative;
     display: flex;
     padding: 12px;
@@ -236,7 +236,7 @@ footer section p{
     margin:1px 20px;
 }
 
-p#end.negrita{
+p.end.negrita{
     text-align: start;
     margin: 50px -20px;
 }
@@ -249,13 +249,13 @@ p#end.negrita{
 @media (min-width: 768px){
 
 /* Header */
-div#logo {
+div.logo-container {
     width: 32%;
 }
 .logo{
     display: flex;
 }
-div#input {
+div.input {
     width: 32%;
 }
 #busqueda {
@@ -270,7 +270,7 @@ div#input {
 i.fas.fa-search {
     border: 1px solid grey;
 }
-div#cuotas {
+div.cuotas-container {
     width: 33%;
 }
 p.cuotas {
@@ -285,7 +285,7 @@ header .header-nav{
 .nav-menu{
     display: inline;
 }
-ul#nav-menu-list{
+ul.nav-menu-list{
     display: flex;
     justify-content: space-around;
     width: 40vw;
@@ -293,7 +293,7 @@ ul#nav-menu-list{
 .nav-header{
     display: inline;
 }
-ul#nav-header-list{
+ul.nav-header-list{
     display: flex;
     justify-content: space-around;
     width: 40vw;
