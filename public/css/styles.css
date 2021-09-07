@@ -3,7 +3,18 @@
 *{
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
     font-family: var(--tipografia)
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+
+li{
+    list-style: none;
 }
 
 .negrita{
@@ -35,42 +46,64 @@ header{
     background-color: var(--color-amarillo);
 }
 
+.logo-busqueda{
+    display: flex;
+    background-color: var(--color-amarillo);
+    flex-wrap: wrap;
+}
+
+div#logo{
+    width: 50%;
+}
+
 .logo{
     margin-top: 30px;
-    margin-left: 29px;
-    width: 47%;
+    margin-left: 15px;
+    width: 90%;
+}
+
+div#input{
+width: 50%;
 }
 
 #busqueda{
-    margin-top: 10px;
-    margin-left: 20px;
-}
-
-#lupa {
-    background-color: white;
-    display: inline-block;
-    border: 1px solid black;
-    border-radius: 5px;
-    margin-top: 1px;
-    margin-bottom: 10px;
+    margin-top: 27px;
+    margin-left: 10px;
+    height: 32px;
+    width: 76%;
+    border-radius: 5%;
+    border: none;
 }
 
 i.fas.fa-search{
-padding: 2px;
+    padding: 2px;
+    background-color: white;
+    border-radius: 5px;
+}
+
+div#cuotas{
+    width: 100%;
+}
+
+p.cuotas{
+    margin-top: 27px;
 }
 
 .cuotas, p.titulares{
-text-align: center;
+    text-align: center;
 }
 
-a{
-    text-decoration: none;
-    color: black;
+.nav-menu{
+    display: none;
 }
 
+.nav-header{
+    display: none;
+}
 
-li{
-    list-style: none;
+li, .cuotas {
+    font-size: var(--cuerpo);
+    font-weight: bold;
 }
 
 .burger-menu{
@@ -86,6 +119,11 @@ i.fas.fa-bars{
     padding: 8px;
 }
 
+.banner{
+    object-fit: cover;
+    display: none;
+}
+
 /* Main */
 
 main{
@@ -94,62 +132,77 @@ main{
     background-color: #ebebeb;
 }
 
-.banner{
-    object-fit: cover;
-}
-
-article{
-    margin-top: 10px;
-    margin-bottom: 10px;
-    background-color: white;
-}
-
-#precio-descripcion{
-    padding: 15px;
-    border: 1px solid #ebebeb;
-}
-
 .titulares{
     font-weight: bold;
     font-size: var(--titulares);
+    padding: 20px 20px;
 }
 
-.inner-circle{
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    border-style: solid;
-    border-width: 2px;
-    line-height: 50px;
-    border-color: var(--verde);
-    padding: 10px 10px;
-    background-color: rgba(0, 0, 0, 0);
-  }
-
-/*
-  img.productos{
-
+p.titulares{
+    display: inline;
+    width: 100%;
 }
-*/
 
-i.fas.fa-truck{
+main section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+main section article i {
     color: var(--verde);
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+}
+
+article{
+    background-color: white;
+    margin: 10px 0;
+}
+
+.productos{
+    width: 100%;
+}
+
+#precio-descripcion{
+    position: relative;
+    display: flex;
+    padding: 12px;
+    border: 1px solid var(--gris-claro);
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .precio{
-font-size: var(--precios);
-font-weight: bold;
+    font-size: var(--precios);
+    font-weight: bold;
+    width: 30%;
 }
 
-p.descuentos-descripciones{
+.descuento{
+    font-size: var(--descuentos-descripciones);
+    font-weight: bold;
     color: var(--verde);
+    width: 70%;
 }
 
 .descuentos-descripciones{
     font-size: var(--descuentos-descripciones);
     font-weight: bold;
-
+    padding-top: 20px;
+    padding-bottom: 15px;
+    display: none;
 }
+
 
 /* Footer */ 
 
@@ -191,85 +244,94 @@ p#end.negrita{
 
 /* Media Queries */
 
-/* 320px - Mobile Small */
-
-@media (min-width: 320px){
-
-    div#input{
-        display: inline;
-    }
-
-    .nav-menu{
-        display: none;
-    }
-
-    .nav-header{
-        display: none;
-    }
-
-    h3.descuentos-descripciones{
-        display: none;
-    }
-
-    .productos{
-        width: 100%;
-    }
-    
-    .banner{
-    display: none;
-        }
-    
-    li, .cuotas {
-        font-size: var(--cuerpo);
-        font-weight: bold;
-    }
-    }
-
-    /* 361px - Tablet */
-
-    @media (min-width: 361px){
-
-        .burger-menu{
-            display: none;
-        }
-
-        h3.descuentos-descripciones{
-            display: block;
-        }
-
-
-        .banner{
-            display: block;
-            width: 100vw;
-                }
-
-        article{
-            box-shadow: 0px 0px 10px 0px rgba(100,100,100,1);
-        }
-
-        .nav-menu{
-            display: block;
-        }
-    
-        .nav-header{
-            display: block;
-            padding-bottom: 10px;
-        }
-    
-    }
      
-    @media (min-width: 769px){
+/* 768px - Tablet */
+@media (min-width: 768px){
 
-        .nav-menu{
-            display: block;
-        }
-    
-        .nav-header{
-            display: block;
-            margin-bottom: 10px;
+/* Header */
+div#logo {
+    width: 32%;
+}
+.logo{
+    display: flex;
+}
+div#input {
+    width: 32%;
+}
+#busqueda {
+    margin-top: 54px;
+    height: 20px;
+    width: 85%;
+    border: 1px solid grey;
+}
+.logo-busqueda {
+    margin-bottom: 30px;
+}
+i.fas.fa-search {
+    border: 1px solid grey;
+}
+div#cuotas {
+    width: 33%;
+}
+p.cuotas {
+    margin-left: 20px;
+    margin-top: 58px;
+}
+header .header-nav{
+    display: flex;
+    background-color: var(--color-amarillo);
+    justify-content: space-around;
+}
+.nav-menu{
+    display: inline;
+}
+ul#nav-menu-list{
+    display: flex;
+    justify-content: space-around;
+    width: 40vw;
+}
+.nav-header{
+    display: inline;
+}
+ul#nav-header-list{
+    display: flex;
+    justify-content: space-around;
+    width: 40vw;
+}
+.burger-menu{
+    display: none;
+}
+.banner{
+    display: block;
+    width: 100vw;
         }
 
-        .burger-menu{
-            display: none;
-        }
-    }
+/* Main */
+main{
+    width: 100vw;
+}
+
+.descuento{
+    width: 39%;
+}
+
+.descuentos-descripciones{
+    display: block;
+}
+
+
+main section article {
+    box-shadow: 0px 0px 10px 0px rgb(100 100 100);
+    margin: 10px 10px;
+    width: 45%;
+}
+
+}
+
+@media (min-width: 1024px) {
+main section article {
+    width: 22%;
+}
+
+
+}
