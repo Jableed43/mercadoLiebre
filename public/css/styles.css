@@ -280,7 +280,7 @@ p.cuotas {
 header .header-nav{
     display: flex;
     background-color: var(--color-amarillo);
-    justify-content: space-around;
+    justify-content: space-between;
 }
 .nav-menu{
     display: inline;
