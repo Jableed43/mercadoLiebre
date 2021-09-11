@@ -28,13 +28,74 @@
 body{
     background-color: #ebebeb;
 }
+ 
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+}
 
+fieldset{
+    border: none;
+    margin: 15px 0;
+}
+
+fieldset.intereses {
+    display: flex;
+    flex-direction: row;
+    width: 70vw;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+h3{
+    margin: 15px 0;
+    text-align: center;
+}
+
+div input {
+    width: 70vw;
+    height: 28px;
+    border-radius: 5%;
+    border: none;
+    margin: 15px;
+    padding-left: 10px;
+    font-weight: bold;
+}
+
+div.perfil{
+    border-radius: 5%;
+    margin: 15px;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+div.perfil input{
+    width: 42vw;
+
+}
+
+::placeholder{
+    color: black;
+    font-weight: bold;
+}
+
+div input.button{
+    background-color: var(--color-celeste);
+    color: white;
+}
+
+fieldset.intereses input, fieldset.intereses label{
+    width: 50%;
+    margin: 15px 0px;}
 /* Header */
 
 header{
     background-color: var(--color-amarillo);
 }
-
 
 .logo{
     margin-top: 30px;
