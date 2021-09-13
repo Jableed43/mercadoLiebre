@@ -1,0 +1,150 @@
+header{
+    background-color: var(--color-amarillo);
+}
+
+header .logo-busqueda{
+    display: flex;
+    background-color: var(--color-amarillo);
+    flex-wrap: wrap;
+}
+
+header div.logo-container{
+    width: 50%;
+}
+
+header .logo{
+    margin-top: 30px;
+    margin-left: 15px;
+    width: 90%;
+}
+
+header div.input{
+width: 50%;
+}
+
+header #busqueda{
+    margin-top: 27px;
+    margin-left: 10px;
+    height: 32px;
+    width: 76%;
+    border-radius: 5%;
+    border: none;
+}
+
+header i.fas.fa-search{
+    padding: 2px;
+    background-color: white;
+    border-radius: 5px;
+}
+
+header div.cuotas-container{
+    width: 100%;
+}
+
+header p.cuotas{
+    margin-top: 27px;
+}
+
+header .cuotas, header p.titulares{
+    text-align: center;
+}
+
+header .nav-menu{
+    display: none;
+}
+
+header .nav-header{
+    display: none;
+}
+
+header li, header .cuotas {
+    font-size: var(--cuerpo);
+    font-weight: bold;
+}
+
+header .burger-menu{
+background-color: var(--color-celeste);
+display: inline-block;
+border-radius: 5px;
+margin: 20px 45vw;
+}
+
+header i.fas.fa-bars{
+    color: white;
+    font-size: 20px;
+    padding: 8px;
+}
+
+header .banner{
+    object-fit: cover;
+    display: none;
+}
+
+/* Media Queries */
+
+     
+/* 768px - Tablet */
+@media (min-width: 768px){
+
+    /* Header */
+    header div.logo-container {
+        width: 32%;
+    }
+    header .logo{
+        display: flex;
+    }
+    header div.input {
+        width: 32%;
+    }
+    header #busqueda {
+        margin-top: 54px;
+        height: 20px;
+        width: 85%;
+        border: 1px solid grey;
+    }
+    header .logo-busqueda {
+        margin-bottom: 30px;
+    }
+    header i.fas.fa-search {
+        border: 1px solid grey;
+    }
+    header div.cuotas-container {
+        width: 33%;
+    }
+    header p.cuotas {
+        margin-left: 20px;
+        margin-top: 58px;
+    }
+    header .header-nav{
+        display: flex;
+        background-color: var(--color-amarillo);
+        justify-content: space-between;
+        padding-bottom: 15px;
+    }
+    header .nav-menu{
+        display: inline;
+    }
+    header ul.nav-menu-list{
+        display: flex;
+        justify-content: space-around;
+        width: 40vw;
+    }
+    header .nav-header{
+        display: inline;
+    }
+    header ul.nav-header-list{
+        display: flex;
+        justify-content: space-around;
+        width: 40vw;
+    }
+    header .burger-menu{
+        display: none;
+    }
+    header .banner{
+        display: block;
+        width: 100vw;
+            }
+    
+        }
+    
+ 

@@ -1,0 +1,34 @@
+footer {
+    background-color: white;
+    padding: 1px 0px;
+    margin: 10px 10px;
+}
+
+.cuerpo-texto{
+    font-size: var(--cuerpo);
+}
+
+footer i{
+    text-align: center;
+    width: 100%;
+}
+
+i.fas.fa-credit-card , i.fas.fa-gift , i.fas.fa-user-shield {
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: var(--color-celeste);
+}
+
+footer section{
+    margin: 50px 45px;
+}
+
+footer section p{
+    text-align: center;
+    margin:1px 20px;
+}
+
+p.negrita.end{
+    text-align: start;
+    margin: 50px -20px;
+}

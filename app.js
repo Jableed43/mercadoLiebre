@@ -6,11 +6,14 @@ const port = 3030
 /* Middleware, establecer ruta estatica para requerir archivos */
 app.use(express.static('public'))
 
-/* app get */
+/* Ruta Home */
 app.get('/', (req, res) => res.sendFile(path.join(__dirname, 'views', 'home.html')))
 
-/* sign-up */
-app.get('/sign', (req, res) => res.sendFile(path.join(__dirname, 'views', 'sign-up.html')))
+/* Ruta Register */
+app.get('/register', (req, res) => res.sendFile(path.join(__dirname, 'views', 'register.html')))
+
+/* Ruta Ingresar */
+app.get('/login', (req, res) => res.sendFile(path.join(__dirname, 'views', 'login.html')))
 
 
 /* Servidor escuchando, siempre va al final */
